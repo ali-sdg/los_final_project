@@ -23,11 +23,11 @@ The model was evaluated on a held-out test set from the MIMIC-III database with 
 
 | Metric | Value | Note |
 | :--- | :--- | :--- |
-| **Sensitivity (Recall)** | **90.73%** | [cite_start]Maximized for patient safety [cite: 86, 271] |
-| **ROC-AUC** | 0.77 | [cite_start]Good discrimination capability [cite: 86, 273] |
-| **Specificity** | 39.61% | [cite_start]Trade-off accepted for higher safety [cite: 87, 272] |
+| **Sensitivity (Recall)** | **90.73%** | Maximized for patient safety  |
+| **ROC-AUC** | 0.77 | Good discrimination capability|
+| **Specificity** | 39.61% |Trade-off accepted for higher safety|
 
-> [cite_start]**Key Insight:** SHAP analysis revealed that specific disease etiologies (e.g., **Pneumonia**) are stronger predictors of long stays than general vital signs alone[cite: 375, 420].
+> **Key Insight:** SHAP analysis revealed that specific disease etiologies (e.g., **Pneumonia**) are stronger predictors of long stays than general vital signs alone.
 
 ## Dataset Access (MIMIC-III)
 **Important Note regarding Data Availability:**
