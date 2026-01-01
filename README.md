@@ -40,23 +40,3 @@ To reproduce the results or use the code:
 1.  You must complete the CITI "Data or Specimens Only Research" training.
 2.  Request access to MIMIC-III via [PhysioNet](https://physionet.org/content/mimiciii/).
 3.  Once approved, download the CSV files and place them in the `data/` directory (or adjust the paths in the config).
-
-## Installation & Usage
-
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/ali-sdg/los_final_project.git](https://github.com/ali-sdg/los_final_project.git)
-    cd los_final_project
-    ```
-
-2.  **Install dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3.  **Run the pipeline (Example):**
-    *Ensure you have the MIMIC-III CSV files (ADMISSIONS.csv, ICUSTAYS.csv, etc.) available locally.*
-    ```bash
-    python src/main.py
-    ```
-
