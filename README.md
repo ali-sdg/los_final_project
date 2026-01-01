@@ -11,12 +11,12 @@ This repository contains the implementation of the term project: **"Safety-First
 The goal of this project is to predict whether an ICU patient requires a **Long Stay (>5 days)** or a **Short Stay**. Unlike traditional regression models that focus on average accuracy, this project adopts a **"Safety-First"** strategy, optimizing the model to maximize **Sensitivity (Recall)**. This ensures that high-risk patients who need extended care are correctly identified, minimizing dangerous "false negatives."
 
 ## Key Features
-* [cite_start]**Ensemble Modeling:** Combines **XGBoost**, **LightGBM**, and **Random Forest** in a Voting Classifier for robust predictions[cite: 85, 247].
-* [cite_start]**Disease-Aware Feature Engineering:** Incorporates specific disease flags (Pneumonia, Heart Failure, Sepsis, etc.) derived from ICD-9 codes, alongside physiological indicators like Shock Index and GCS[cite: 84, 196].
+* **Ensemble Modeling:** Combines **XGBoost**, **LightGBM**, and **Random Forest** in a Voting Classifier for robust predictions
+* **Disease-Aware Feature Engineering:** Incorporates specific disease flags (Pneumonia, Heart Failure, Sepsis, etc.) derived from ICD-9 codes, alongside physiological indicators like Shock Index and GCS
 * **Advanced Data Handling:**
-    * [cite_start]**Missing Data:** Uses **MICE** (Multivariate Imputation by Chained Equations) to preserve statistical relationships[cite: 84, 245].
-    * [cite_start]**Imbalance:** Implements **SMOTE** (Synthetic Minority Over-sampling Technique) to prevent bias towards the majority class[cite: 86, 250].
-* [cite_start]**Explainable AI:** Uses **SHAP** (SHapley Additive exPlanations) to interpret model decisions and validate clinical relevance[cite: 373].
+    * **Missing Data:** Uses **MICE** (Multivariate Imputation by Chained Equations) to preserve statistical relationships
+    * **Imbalance:** Implements **SMOTE** (Synthetic Minority Over-sampling Technique) to prevent bias towards the majority class
+* **Explainable AI:** Uses **SHAP** (SHapley Additive exPlanations) to interpret model decisions and validate clinical relevance
 
 ## Performance
 The model was evaluated on a held-out test set from the MIMIC-III database with a custom decision threshold of **0.38**:
